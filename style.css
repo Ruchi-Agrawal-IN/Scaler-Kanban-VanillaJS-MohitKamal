@@ -4,3 +4,83 @@
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: 3rem;
+  background-image: url("./bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.form-wrapper input {
+  flex-basis: 300px;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  border: none;
+}
+
+.form-wrapper button {
+  padding: 0.2rem;
+  background-color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  flex-basis: 150px;
+}
+
+.app-btns {
+  margin-left: auto;
+  color: black;
+  padding: 0.5rem;
+}
+
+.tasks-wrapper {
+  margin-block: 5rem;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.tasks-wrapper h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tasks-wrapper p {
+  font-size: 0.9rem;
+  color: white;
+  font-weight: 600;
+}
+
+.tasks-lane {
+  background-color: azure;
+  min-height: 60vh;
+  padding: 1rem;
+  color: black;
+}
+
+.task {
+  background-color: rgb(0, 0, 0, 0.7);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  margin-block: 0.7rem;
+  cursor: move;
+  transition: all 0.2s ease-in-out;
+}
+
+.is-dragging {
+  transform: rotate(5deg);
+  background-color: red;
+}
